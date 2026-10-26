@@ -40,10 +40,9 @@ node node-xrlToXfdf.js --xrl=sample.xrl --width=842 --height=595
 
 ### Option #2 - WebViewer Server
 
-Use WebViewer Server to automatically retrieve other documents' heights. See supported file formats here: https://www.pdftron.com/documentation/web/guides/file-format-support/
+Use WebViewer Server to automatically retrieve other documents' heights. See supported file formats here: https://docs.apryse.com/web/what-is-webviewer/file-format-support
 
-Guide on setting up your own WebViewer Server:
-https://www.pdftron.com/documentation/web/guides/wv-server-deployment/
+Guide on setting up your own WebViewer Server: https://docs.apryse.com/web/webviewer-server/wv-server-deployment
 
 ```
 node node-xrlToXfdf.js --document=sample.pdf --xrl=sample.xrl --webViewerServerUrl=https://example.server.com
@@ -94,7 +93,7 @@ node node-xrlToXfdf.js --document=sample.pdf --xrl=sample.xrl --alignment=L
 
 `inputXrlString` is the contents of an .xrl markup file for annotations.
 
-`pageInfos` is an array consisting of objects with the width, height and rotation of each page. Use the `getPageInfo` function on the document object to get the width and height. (https://www.pdftron.com/api/web/CoreControls.Document.html)
+`pageInfos` is an array consisting of objects with the width, height and rotation of each page. Use the `getPageInfo` function on the document object to get the width and height. (https://sdk.apryse.com/api/web/Core.Document.html)
 
 Use getPageRotation on the document object to get the page rotation in degrees.
 
